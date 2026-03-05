@@ -8,7 +8,7 @@ api_key = st.sidebar.text_input("AIzaSyA_Dl2niG8kAGk2v0lG6h7pngKhn-ccGgM", type=
 
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash') # The Vision Model
+    model = genai.GenerativeModel('gemini-2.5-flash') # The Vision Model
 
 def get_real_ai_grade(image):
     prompt = """
